@@ -1,0 +1,63 @@
+1. Definition
+
+Binary Tree:
+A tree data structure where each node has at most 2 children (left and right).
+
+B-Tree:
+A self-balancing tree where each node can have more than two children and stores multiple keys.
+
+ 2. Structure
+Feature	Binary Tree	B-Tree
+Children per node	Max 2	Many (depends on order)
+Keys per node	One	Multiple
+Shape	Not necessarily balanced	Always balanced
+ 3. Height
+Binary Tree: Height can become large (skewed tree)
+B-Tree: Height is always small and balanced
+
+ This makes B-Trees more efficient for large data.
+
+ 4. Usage
+Binary Tree:
+Expression trees
+Binary Search Trees (BST)
+Traversal problems
+B-Tree:
+Databases
+File systems
+Disk storage systems
+ 5. Searching
+Binary Tree:
+Time complexity can be O(n) (worst case)
+If balanced (BST): O(log n)
+B-Tree:
+Always O(log n)
+Fewer disk accesses (very important)
+ 6. Node Content
+Binary Tree Node:
+One value
+Two pointers (left, right)
+B-Tree Node:
+Multiple values (keys)
+Multiple child pointers
+ 7. Balancing
+Binary Tree: Not automatically balanced
+B-Tree: Always self-balanced after insertion/deletion
+ 8. Example
+
+Binary Tree:
+
+    10
+   /  \
+  5    20
+
+B-Tree (order 3 example):
+
+   [10 | 20]
+   /   |   \
+ [5] [15] [25]
+ Key Differences Summary
+Binary Tree → simple, 2 children, may be unbalanced
+B-Tree → complex, many children, always balanced
+Binary Tree → used in memory
+B-Tree → used in databases and disk storage
